@@ -13,16 +13,19 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.indigo[900],
       ),
       body: Row(
+//        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        
         children: <Widget>[
           Text('Hello Row'),
           FlatButton(
-            onPressed: (){},
-            color:Colors.indigoAccent,
-            child: Text('Rows in flutter')),
+              onPressed: () {},
+              color: Colors.indigoAccent,
+              child: Text('Rows in flutter')),
           Container(
             color: Colors.amber,
-              padding: EdgeInsets.all(30.0),
-              child: Text('Insid a container'),
+            padding: EdgeInsets.all(10.0),
+            child: Text('Insid a container'),
           )
         ],
       ),
