@@ -16,11 +16,11 @@ class HomeScreen extends StatelessWidget {
         child: Center(
 //          child:Image.asset('assets/img/space-1.jpg'),
           //child: Imange.network('https://www.splash.com/space-backgroudn.png')
-          child: RaisedButton(
+          child: FlatButton(
             onPressed: (){
-              print('You clicked a raised button');
+              print('You clicked a flat button');
             },
-            child: Text('I\'m a raised button',style: TextStyle(color: Colors.white),),
+            child: Text('I\'m a flat button',style: TextStyle(color: Colors.white),),
             color: Colors.indigoAccent[100],
           )
         ),
