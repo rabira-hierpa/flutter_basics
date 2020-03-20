@@ -16,10 +16,10 @@ class HomeScreen extends StatelessWidget {
         child: Center(
 //          child:Image.asset('assets/img/space-1.jpg'),
           //child: Imange.network('https://www.splash.com/space-backgroudn.png')
-          child: Icon(
-            Icons.book,
-            color: Colors.indigo,
-            size: 150.0,
+          child: RaisedButton(
+            onPressed: (){},
+            child: Text('I\'m a raised button',style: TextStyle(color: Colors.white),),
+            color: Colors.indigoAccent[100],
           )
         ),
         padding: EdgeInsets.all(0.0),
