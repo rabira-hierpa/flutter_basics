@@ -13,17 +13,11 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.indigo[900],
       ),
       body: Container(
-        child: Center(
-//          child:Image.asset('assets/img/space-1.jpg'),
-          //child: Imange.network('https://www.splash.com/space-backgroudn.png')
-          child: IconButton(
-            onPressed: (){ print('you clicked an iconButton');},
-            icon: Icon(Icons.bookmark_border),
-            color: Colors.indigoAccent[700],
-          )
+        child: Text('Hello'),
+        color: Colors.indigoAccent[100],
+        padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20.0),
+
         ),
-        padding: EdgeInsets.all(0.0),
-      ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add, size: 24),
         backgroundColor: Colors.red[900],
