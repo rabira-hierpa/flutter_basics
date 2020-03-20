@@ -17,7 +17,9 @@ class HomeScreen extends StatelessWidget {
 //          child:Image.asset('assets/img/space-1.jpg'),
           //child: Imange.network('https://www.splash.com/space-backgroudn.png')
           child: RaisedButton(
-            onPressed: (){},
+            onPressed: (){
+              print('You clicked a raised button');
+            },
             child: Text('I\'m a raised button',style: TextStyle(color: Colors.white),),
             color: Colors.indigoAccent[100],
           )
