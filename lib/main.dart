@@ -15,10 +15,10 @@ class HomeScreen extends StatelessWidget {
       body: Row(
 //        mainAxisAlignment: MainAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        
+        crossAxisAlignment: CrossAxisAlignment.end,
         children: <Widget>[
-          Text('Hello Row'),
-          FlatButton(
+          Text('Hello Row ',),
+          RaisedButton(
               onPressed: () {},
               color: Colors.indigoAccent,
               child: Text('Rows in flutter')),
