@@ -12,10 +12,19 @@ class HomeScreen extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.indigo[900],
       ),
-      body: Padding(
-        padding: EdgeInsets.all(90.0),
-        child: Text('Flutter is cool') ,
-
+      body: Row(
+        children: <Widget>[
+          Text('Hello Row'),
+          FlatButton(
+            onPressed: (){},
+            color:Colors.indigoAccent,
+            child: Text('Rows in flutter')),
+          Container(
+            color: Colors.amber,
+              padding: EdgeInsets.all(30.0),
+              child: Text('Insid a container'),
+          )
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add, size: 24),
