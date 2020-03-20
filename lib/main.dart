@@ -12,12 +12,11 @@ class HomeScreen extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.indigo[900],
       ),
-      body: Container(
-        child: Text('Hello'),
-        color: Colors.indigoAccent[100],
-        padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20.0),
+      body: Padding(
+        padding: EdgeInsets.all(90.0),
+        child: Text('Flutter is cool') ,
 
-        ),
+      ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add, size: 24),
         backgroundColor: Colors.red[900],
