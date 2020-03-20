@@ -14,8 +14,13 @@ class HomeScreen extends StatelessWidget {
       ),
       body: Container(
         child: Center(
-          child:Image.asset('assets/img/space-1.jpg'),
+//          child:Image.asset('assets/img/space-1.jpg'),
           //child: Imange.network('https://www.splash.com/space-backgroudn.png')
+          child: Icon(
+            Icons.book,
+            color: Colors.indigo,
+            size: 150.0,
+          )
         ),
         padding: EdgeInsets.all(0.0),
       ),
