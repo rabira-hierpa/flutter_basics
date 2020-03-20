@@ -12,21 +12,33 @@ class HomeScreen extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.indigo[900],
       ),
-      body: Row(
-//        mainAxisAlignment: MainAxisAlignment.center,
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.end,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          Text('Hello Row ',),
-          RaisedButton(
-              onPressed: () {},
-              color: Colors.indigoAccent,
-              child: Text('Rows in flutter')),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Text('Columns in Flutter',
+              style: TextStyle(fontWeight: FontWeight.bold,fontSize: 36),)
+            ],
+          ),
           Container(
-            color: Colors.amber,
-            padding: EdgeInsets.all(10.0),
-            child: Text('Insid a container'),
-          )
+            child: Text('First Container'),
+            padding: EdgeInsets.all(20.0),
+            color: Colors.indigoAccent,
+          ),
+          Container(
+            child: Text('Second Container'),
+            padding: EdgeInsets.all(20.0),
+            color: Colors.amberAccent,
+          ),
+          Container(
+            child: Text('Third Container'),
+            padding: EdgeInsets.all(20.0),
+            color: Colors.redAccent,
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
