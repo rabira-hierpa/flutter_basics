@@ -13,31 +13,35 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.indigo[900],
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: <Widget>[
+        children: [
+        Expanded(child: Image.asset('assets/img/space-1.jpg')),
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Text('Columns in Flutter',
-              style: TextStyle(fontWeight: FontWeight.bold,fontSize: 36),)
+              Expanded(
+                flex: 3,
+                child: Container(
+                  padding: EdgeInsets.all(30.0),
+                  color: Colors.indigoAccent,
+                  child: Text('1'),
+                ),
+              ),
+              Expanded(
+                flex: 2,
+                child: Container(
+                  padding: EdgeInsets.all(30.0),
+                  color: Colors.amberAccent,
+                  child: Text('2'),
+                ),
+              ),
+              Expanded(
+                flex: 1,
+                child: Container(
+                  padding: EdgeInsets.all(30.0),
+                  color: Colors.pinkAccent,
+                  child: Text('3'),
+                ),
+              )
             ],
-          ),
-          Container(
-            child: Text('First Container'),
-            padding: EdgeInsets.all(20.0),
-            color: Colors.indigoAccent,
-          ),
-          Container(
-            child: Text('Second Container'),
-            padding: EdgeInsets.all(20.0),
-            color: Colors.amberAccent,
-          ),
-          Container(
-            child: Text('Third Container'),
-            padding: EdgeInsets.all(20.0),
-            color: Colors.redAccent,
           ),
         ],
       ),
