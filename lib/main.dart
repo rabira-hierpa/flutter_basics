@@ -12,12 +12,38 @@ class HomeScreen extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.indigo[900],
       ),
-      body: Container(
-        child: Center(
-          child:Image.asset('assets/img/space-1.jpg'),
-          //child: Imange.network('https://www.splash.com/space-backgroudn.png')
-        ),
-        padding: EdgeInsets.all(0.0),
+      body: Column(
+        children: [
+        Expanded(child: Image.asset('assets/img/space-1.jpg')),
+          Row(
+            children: <Widget>[
+              Expanded(
+                flex: 3,
+                child: Container(
+                  padding: EdgeInsets.all(30.0),
+                  color: Colors.indigoAccent,
+                  child: Text('1'),
+                ),
+              ),
+              Expanded(
+                flex: 2,
+                child: Container(
+                  padding: EdgeInsets.all(30.0),
+                  color: Colors.amberAccent,
+                  child: Text('2'),
+                ),
+              ),
+              Expanded(
+                flex: 1,
+                child: Container(
+                  padding: EdgeInsets.all(30.0),
+                  color: Colors.pinkAccent,
+                  child: Text('3'),
+                ),
+              )
+            ],
+          ),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add, size: 24),
